@@ -17,7 +17,7 @@
     initialValue={40}
     minValue={20}
     maxValue={70}
-    predefinedPositions={[0, 50]}
+    predefinedPositions={[30, 50]}
     onChange={(index) => {
         console.log(index);
     }}
