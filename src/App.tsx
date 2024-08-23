@@ -5,10 +5,8 @@ function App() {
         <>
             <div className="absolute h-full w-full flex items-center justify-center">
                 <Slider
-                    initialValue={40}
-                    minValue={20}
-                    maxValue={70}
-                    predefinedPositions={[30, 50]}
+                    initialValue={50}
+                    predefinedPositions={[25, 50, 75]}
                     onChange={(index) => {
                         console.log(`slider index changed to ${index}`);
                     }}
