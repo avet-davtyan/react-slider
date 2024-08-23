@@ -55,7 +55,8 @@ const useSlider = ({ minValue = 0, maxValue = 100, predefinedPositions, initialV
     const handleTouchEnd = () => {
         thumbRef.current!.style.transition = "all 0.2s";
         trackTailkRef.current!.style.transition = "all 0.2s";
-        console.log(predefinedPositions ? getNearestIndex() : toValue(leftPercentageRef.current));
+        const callBackValue = predefinedPositions ? getNearestIndex() : toValue(leftPercentageRef.current);
+        onChange && callBackValue != undefined && onChange(callBackValue);
         document.removeEventListener("touchmove", handleTouchMove);
         document.removeEventListener("touchend", handleTouchEnd);
     };
