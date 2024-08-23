@@ -1,5 +1,9 @@
 # React Slider Component
 
+# Live Demo
+
+[Check out the live demo here!](https://avet-davtyan.github.io/react-slider/)
+
 ### Slider Props
 
 | Prop                | Value                                                                                                                                        |
